@@ -1,3 +1,15 @@
+<div align="center">
+
+  [![wakatime](https://wakatime.com/badge/github/Amir-Pourhadi/Personal-Website.svg)](https://wakatime.com/badge/github/Amir-Pourhadi/Personal-Website)
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/b48aa1cb-0cbb-4f1b-9198-cdf573f95d1e/deploy-status)](https://app.netlify.com/sites/amir-personal-website/deploys)
+  [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Amir-Pourhadi_Personal-Website&metric=ncloc)](https://sonarcloud.io/dashboard?id=Amir-Pourhadi_Personal-Website)
+  [![CodeFactor](https://www.codefactor.io/repository/github/amir-pourhadi/personal-website/badge)](https://www.codefactor.io/repository/github/amir-pourhadi/personal-website)  
+  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Amir-Pourhadi_Personal-Website&metric=alert_status)](https://sonarcloud.io/dashboard?id=Amir-Pourhadi_Personal-Website)
+  [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Amir-Pourhadi_Personal-Website&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Amir-Pourhadi_Personal-Website)
+  [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Amir-Pourhadi_Personal-Website&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=Amir-Pourhadi_Personal-Website)
+  [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Amir-Pourhadi_Personal-Website&metric=security_rating)](https://sonarcloud.io/dashboard?id=Amir-Pourhadi_Personal-Website)
+</div>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
