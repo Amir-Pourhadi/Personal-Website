@@ -4,6 +4,8 @@ export const GlobalStyle = createGlobalStyle({
   "*": {
     boxSizing: "border-box",
     userSelect: "none",
+    WebkitFontSmoothing: "antialiased",
+    MozOsxFontSmoothing: "grayscale",
   },
   a: {
     color: "inherit",
