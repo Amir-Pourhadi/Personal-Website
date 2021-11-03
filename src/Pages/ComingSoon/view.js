@@ -13,7 +13,7 @@ export const Main = styled.main(({ theme: { comingSoon } }) => ({
   gridGap: 10,
   gridTemplateColumns: "1fr",
   gridTemplateRows: "100px auto 50px auto 100px auto",
-  gridTemplateAreas: "'countdown' 'logo' 'title' 'description' 'subscribe' 'social'",
+  gridTemplateAreas: "'countdown' 'gear' 'title' 'description' 'subscribe' 'social'",
   justifyItems: "center",
   alignItems: "center",
   color: comingSoon.colors.white,
