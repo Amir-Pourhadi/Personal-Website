@@ -1,7 +1,9 @@
+import { Main } from "./view";
+
 export default function ComingSoon() {
   return (
-    <div>
-      
-    </div>
-  )
+    <Main>
+      <h1>Coming Soon!</h1>
+    </Main>
+  );
 }
