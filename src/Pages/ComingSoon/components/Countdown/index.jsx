@@ -30,7 +30,7 @@ export default function Countdown({ futureDate }) {
     <div>
       {Object.keys(timer).map((objKey, index) => (
         <div key={index}>
-          <span>{timer[objKey]}</span>
+          <span>{timer[objKey].toString().padStart(2, "0")}</span>
           <span>{objKey.toUpperCase()}</span>
         </div>
       ))}
