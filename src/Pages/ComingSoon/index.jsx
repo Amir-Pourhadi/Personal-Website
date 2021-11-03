@@ -1,4 +1,4 @@
-import { Countdown } from "./components";
+import Countdown from "./components/Countdown";
 import { Main } from "./view";
 
 export default function ComingSoon() {
