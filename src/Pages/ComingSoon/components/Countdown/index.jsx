@@ -1,5 +1,6 @@
 import moment, { duration } from "moment";
 import { useEffect, useState } from "react";
+import { Caption, Container, Number, Segment } from "./view";
 
 export default function Countdown({ futureDate }) {
   const [timer, setTimer] = useState({ days: 0, hours: 0, mins: 0, secs: 0 });
@@ -27,14 +28,14 @@ export default function Countdown({ futureDate }) {
   }, [futureDate]);
 
   return (
-    <div>
+    <Container>
       {Object.keys(timer).map((objKey, index) => (
-        <div key={index}>
-          <span>{timer[objKey].toString().padStart(2, "0")}</span>
-          <span>{objKey.toUpperCase()}</span>
-        </div>
+        <Segment key={index}>
+          <Number>{timer[objKey].toString().padStart(2, "0")}</Number>
+          <Caption>{objKey.toUpperCase()}</Caption>
+        </Segment>
       ))}
-    </div>
+    </Container>
   );
 }
 
