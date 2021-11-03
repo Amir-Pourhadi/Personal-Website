@@ -1,7 +1,9 @@
+import { Container, Image } from "./view";
+
 export default function Gear({ src, alt }) {
   return (
-    <div>
-      <img src={src} alt={alt} />
-    </div>
+    <Container>
+      <Image src={src} alt={alt} />
+    </Container>
   );
 }
