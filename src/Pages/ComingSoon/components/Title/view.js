@@ -8,9 +8,10 @@ export const Content = styled.h1(({ theme: { comingSoon } }) => ({
   maxWidth: 700,
   alignItems: "center",
   gridTemplateColumns: "1fr auto 1fr",
+
   "&:before, &:after": {
     display: "block",
-    content: "",
+    content: "''",
     height: 10,
   },
   "&:before": {
