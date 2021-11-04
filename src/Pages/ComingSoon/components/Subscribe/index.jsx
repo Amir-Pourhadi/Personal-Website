@@ -6,6 +6,13 @@ export default function Subscribe({ placeholder, buttonText }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    if (email) {
+      fetch(`https://amir-personal-api.herokuapp.com/api/memberAdd?email=${email}`)
+        .then((res) => res.json())
+        .then((res) => console.log(res))
+        .catch((err) => console.error(err));
+    }
   };
 
   const handleChange = (event) => {
