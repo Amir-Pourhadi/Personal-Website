@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button, Form, Input } from "./view";
 
 export default function Subscribe({ placeholder, buttonText }) {
   const [email, setEmail] = useState("");
@@ -12,9 +13,9 @@ export default function Subscribe({ placeholder, buttonText }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="email" name="email" placeholder={placeholder} value={email} onChange={handleChange} />
-      <button type="submit">{buttonText}</button>
-    </form>
+    <Form onSubmit={handleSubmit}>
+      <Input type="email" name="email" placeholder={placeholder} value={email} onChange={handleChange} />
+      <Button type="submit">{buttonText}</Button>
+    </Form>
   );
 }
