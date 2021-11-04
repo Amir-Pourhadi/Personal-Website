@@ -1,7 +1,6 @@
 {
-  "pages": [
-    {
-      "name": "comingSoon",
+  "pages": {
+    "comingSoon": {
       "route": {
         "path": "/comingSoon"
       },
@@ -19,14 +18,10 @@
           "text": "Amir Pourhadi's personal website will be up and running shortly. Please subscribe to my newsletter below to receive updates when my projects are available!"
         },
         "subscribe": {
-          "placeholder": {
-            "text": "Enter your Email Address"
-          },
-          "buttonText": {
-            "text": "Submit"
-          }
+          "placeholder": "Enter your Email Address",
+          "buttonText": "Submit"
         }
       }
     }
-  ]
+  }
 }
