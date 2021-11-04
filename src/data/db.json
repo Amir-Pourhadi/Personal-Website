@@ -1,0 +1,32 @@
+{
+  "pages": [
+    {
+      "name": "comingSoon",
+      "route": {
+        "path": "/comingSoon"
+      },
+      "sections": {
+        "countdown": {
+          "futureDate": "2021-12-31 00:00:00"
+        },
+        "gear": {
+          "alt": "Spinning Gear"
+        },
+        "title": {
+          "text": "Coming Soon"
+        },
+        "description": {
+          "text": "Amir Pourhadi's personal website will be up and running shortly. Please subscribe to my newsletter below to receive updates when my projects are available!"
+        },
+        "subscribe": {
+          "placeholder": {
+            "text": "Enter your Email Address"
+          },
+          "buttonText": {
+            "text": "Submit"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -10,10 +10,10 @@ export default function ComingSoon() {
   return (
     <Main>
       <Countdown />
-      <Gear src={gearImage} alt="Spinning Gear" />
+      <Gear src={gearImage} />
       <Title />
       <Description />
-      <Subscribe placeholder="Enter Email Address" buttonText="Submit" />
+      <Subscribe />
     </Main>
   );
 }
