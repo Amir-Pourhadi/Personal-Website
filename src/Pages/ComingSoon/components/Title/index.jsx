@@ -1,7 +1,7 @@
-import { Container } from "./view";
+import { Content } from "./view";
 
 export default function Title({ text }) {
-  return <Container>{text}</Container>;
+  return <Content>{text}</Content>;
 }
 
 Title.defaultProps = {
