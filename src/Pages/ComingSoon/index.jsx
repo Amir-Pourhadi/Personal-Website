@@ -15,7 +15,7 @@ export default function ComingSoon() {
       <Countdown futureDate={countdown.futureDate} />
       <Gear src={gearImage} alt={gear.alt} />
       <Title text={title.text} />
-      <Description description={description.text} />
+      <Description text={description.text} />
       <Subscribe placeholder={subscribe.placeholder} buttonText={subscribe.buttonText} />
     </Main>
   );
