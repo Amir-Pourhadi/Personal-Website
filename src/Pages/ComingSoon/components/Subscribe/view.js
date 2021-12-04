@@ -9,7 +9,7 @@ export const Form = styled.form({
   "@media (max-width: 700px)": {
     gridTemplateAreas: "'input' 'button'",
 
-    "& > *": {
+    "& input, button": {
       width: 250,
       gridColumn: "1 / -1",
     },
