@@ -1,17 +1,22 @@
+import axios from "axios";
 import { useState } from "react";
 import { Button, Form, Input } from "./view";
 
 export default function Subscribe({ placeholder, buttonText }) {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (email) {
-      fetch(`https://amir-personal-api.herokuapp.com/api/memberAdd?email=${email}`)
-        .then((res) => res.json())
-        .then((res) => console.log(res))
-        .catch((err) => console.error(err));
+      try {
+        const { data } = await axios.get(`https://amir-personal-api.herokuapp.com/api/memberAdd?email=${email}`);
+        console.log(data);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setEmail("");
+      }
     }
   };
 
