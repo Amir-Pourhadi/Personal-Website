@@ -15,11 +15,31 @@
           "text": "Coming Soon"
         },
         "description": {
-          "text": "Amir Pourhadi's personal website will be up and running shortly. Please subscribe to my newsletter below to receive updates when my projects are available!"
+          "text": "Amir Pourhadi's personal website will be up and running shortly! Please subscribe to my newsletter below to receive updates when my projects are available!"
         },
         "subscribe": {
           "placeholder": "Enter your Email Address",
           "buttonText": "Submit"
+        },
+        "notification": {
+          "success": {
+            "message": "Thank you for subscribing to our newsletter! We will keep you updated with the latest news and updates!",
+            "icon": "checkMarkIcon",
+            "alt": "Success",
+            "bgColor": "green"
+          },
+          "warning": {
+            "message": "The email address you entered is already subscribed to our newsletter! Please check your email for the latest updates!",
+            "icon": "exclamationMarkIcon",
+            "alt": "Warning",
+            "bgColor": "orange"
+          },
+          "error": {
+            "message": "There was an issue subscribing you to our newsletter! Please try again later!",
+            "icon": "xMarkIcon",
+            "alt": "Error",
+            "bgColor": "red"
+          }
         }
       }
     }
