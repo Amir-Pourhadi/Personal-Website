@@ -1,9 +1,5 @@
 import { pages } from "data/db.json";
-import Countdown from "./components/Countdown";
-import Description from "./components/Description";
-import Gear from "./components/Gear";
-import Subscribe from "./components/Subscribe";
-import Title from "./components/Title";
+import { Countdown, Description, Gear, Subscribe, Title } from "./components";
 import gearImage from "./images/gear.svg";
 import { Main } from "./view";
 
