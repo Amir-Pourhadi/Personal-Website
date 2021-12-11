@@ -1,8 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
+import checkMarkIcon from "./images/checkMark.svg";
+import exclamationMarkIcon from "./images/exclamationMark.svg";
+import xMarkIcon from "./images/xMark.svg";
 import { Button, Form, Input } from "./view";
 
-export default function Subscribe({ placeholder, buttonText }) {
+export default function Subscribe({ placeholder, buttonText, showNotification }) {
   const [email, setEmail] = useState("");
 
   const handleSubmit = async (event) => {
@@ -11,7 +14,10 @@ export default function Subscribe({ placeholder, buttonText }) {
     if (email) {
       try {
         const { data } = await axios.get(`https://amir-personal-api.herokuapp.com/api/memberAdd?email=${email}`);
-        console.log(data);
+
+        if (data.status === "subscribed") showNotification("success", checkMarkIcon);
+        else if (data.title === "Member Exists") showNotification("warning", exclamationMarkIcon);
+        else showNotification("error", xMarkIcon);
       } catch (error) {
         console.error(error);
       } finally {
