@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { GlobalStyle } from "GlobalStyle";
-import { ComingSoon } from "Pages";
+import { GlobalStyle } from "./GlobalStyle";
+import { ComingSoon } from "./Pages";
 import { Redirect, Route, Switch } from "react-router";
 import { ThemeProvider } from "styled-components";
-import Theme from "Theme";
+import Theme from "./Theme";
 
 export default function App() {
   return (
