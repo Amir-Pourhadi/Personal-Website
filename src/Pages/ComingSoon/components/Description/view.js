@@ -7,6 +7,7 @@ export const Container = styled.div({
   fontWeight: 500,
   maxWidth: 700,
   gridTemplateColumns: "1fr",
+  overflow: "hidden",
 });
 
 export const Content = styled.p({
