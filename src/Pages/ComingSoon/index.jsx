@@ -6,6 +6,7 @@ import { Main } from "./view";
 
 export default function ComingSoon() {
   const [notify, setNotify] = useState({ visible: false, level: "error", icon: null });
+  const [loading, setLoading] = useState(false);
 
   const showNotification = (level, icon) => {
     setNotify({ visible: true, level, icon });
@@ -17,7 +18,7 @@ export default function ComingSoon() {
   return (
     <Main>
       <Countdown futureDate={countdown.futureDate} />
-      <Gear src={gearImage} alt={gear.alt} />
+      <Gear src={gearImage} alt={gear.alt} loading={loading} />
       <Title text={title.text} />
       <Description
         text={description.text}
@@ -30,6 +31,7 @@ export default function ComingSoon() {
       <Subscribe
         placeholder={subscribe.placeholder}
         buttonText={subscribe.buttonText}
+        setLoading={setLoading}
         showNotification={showNotification}
       />
     </Main>

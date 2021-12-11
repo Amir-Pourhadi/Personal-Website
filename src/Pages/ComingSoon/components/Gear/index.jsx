@@ -1,8 +1,8 @@
 import { Container, Image } from "./view";
 
-export default function Gear({ src, alt }) {
+export default function Gear({ src, alt, loading }) {
   return (
-    <Container>
+    <Container loading={loading}>
       <Image src={src} alt={alt} />
     </Container>
   );

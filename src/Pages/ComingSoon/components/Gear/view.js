@@ -5,9 +5,12 @@ const imageSpin = keyframes({
   to: { transform: "rotate(360deg)" },
 });
 
-export const Container = styled.div({
-  gridArea: "gear",
-});
+export const Container = styled.div(
+  ({ loading }) => css`
+    grid-area: "gear";
+    animation: ${loading && imageSpin} infinite 5s linear;
+  `
+);
 
 export const Image = styled.img({
   height: "40vmin",
