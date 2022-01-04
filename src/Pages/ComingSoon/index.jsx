@@ -13,7 +13,7 @@ export default function ComingSoon() {
     setTimeout(() => setNotify({ visible: false, level: "error", icon: null }), 5000);
   };
 
-  const { countdown, gear, title, description, subscribe, notification } = pages.comingSoon.sections;
+  const { countdown, gear, title, description, subscribe, notification, socialLinks } = pages.comingSoon.sections;
 
   return (
     <Main>
