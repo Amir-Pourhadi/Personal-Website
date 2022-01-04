@@ -40,7 +40,25 @@
             "alt": "Error",
             "bgColor": "red"
           }
-        }
+        },
+        "socialLinks": [
+          {
+            "url": "",
+            "name": "Facebook"
+          },
+          {
+            "url": "",
+            "name": "Instagram"
+          },
+          {
+            "url": "",
+            "name": "YouTube"
+          },
+          {
+            "url": "",
+            "name": "Twitter"
+          }
+        ]
       }
     }
   }
